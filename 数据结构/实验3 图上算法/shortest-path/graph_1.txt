@@ -1,0 +1,47 @@
++v A
++v B
++v C
++v D
++v E
++v F
++v G
++v H
++v I
++v J
++v K
++v L
+
++e A D 2
++e C A 6
++e A L 8
++e L A 8
++e A B 5
++e B A 4
+
++e D B 6
++e K B 7
++e B F 2
++e B G 2
+
++e C E 2
++e C K 4
++e K C 2
++e H C 4
++e C L 5
+
++e D E 1
+
++e E J 3
++e I E 4
+
++e F I 5
++e G F 2
+
++e G H 3
+
++e H L 3
++e J H 6
+
++e J K 1
+
++e I L 4

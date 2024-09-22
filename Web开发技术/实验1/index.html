@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>哈尔滨工业大学退学服务</title>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(
+            function () {
+                if (sessionStorage.getItem("loginStatus") !== "success")
+                    window.location.replace("login.html")
+            }
+        )
+    </script>
+</head>
+<body>
+    <h1>退学申请已成功提交！请求将在3个工作日内受理</h1>
+    <a href="login.html">再次申请</a>
+</body>
+</html>

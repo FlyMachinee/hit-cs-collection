@@ -1,0 +1,1 @@
+g++ -o test.exe ./main.cpp ./src/AdjacencyListGraph.cpp ./src/AdjacencyMatrixGraph.cpp

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>哈尔滨工业大学判官系统</title>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script>
+        function clearAllCookie() {
+            var keys = document.cookie.match(/[^ =;]+(?=\=)/g);
+            if(keys) {
+                for(var i = keys.length; i--;)
+                    document.cookie = keys[i] + '=0;expires=' + new Date(0).toUTCString()
+            }
+        }
+
+        $(document).ready(
+            function () {
+                let cookies = document.cookie.split(";")
+                for (let i = 0; i < cookies.length; ++i) {
+                    let cookie = cookies[i].trim()
+                    if (cookie.indexOf("username") === 0) {
+                        $("#username").val(cookie.substring("username".length + 1, cookie.length))
+                        $($("#is-remember")[0]).attr("checked", "true")
+                    }
+                    if (cookie.indexOf("password") === 0) {
+                        $("#password").val(cookie.substring("password".length + 1, cookie.length))
+                        $($("#is-remember")[0]).attr("checked", "true")
+                    }
+                }
+
+                $("#submit").click(
+                    function () {
+                        $("#warning").html("")
+                        let username = $("#username").val()
+                        let password = $("#password").val()
+                        if (!username || !password) {
+                            if (!username)
+                                $("#warning").append("用户名不能为空！<br>")
+                            if (!password)
+                                $("#warning").append("密码不能为空！<br>")
+                        }
+                        else {
+                            $.post("/Task02_war_exploded/login-servlet", { username, password },
+                                function (loginResult) {
+                                    console.log(loginResult)
+                                    if (loginResult.isOk) {
+                                        sessionStorage.setItem("username", username)
+
+                                        if ($("#is-remember")[0].checked) {
+                                            document.cookie = "username=" + username
+                                            document.cookie = "password=" + password
+                                        }
+                                        else {
+                                            clearAllCookie()
+                                        }
+                                        window.location.replace("student.jsp")
+                                    }
+                                    else {
+                                        $("#warning").append("用户名或密码错误！<br>")
+                                    }
+                                })
+                        }
+                    }
+                )
+            }
+        )
+    </script>
+
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+</head>
+
+<style type="text/css">
+    .row {
+        text-align: center;
+    }
+
+    .bg {
+        background-image: url('./image/957ca930-ca97-4040-bee4-3ab547c4f23d.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .navbar {
+        background-color: #4D8DDD;
+        height: 60px;
+        font-family: '微软雅黑';
+        font-size: 18px;
+    }
+</style>
+
+<body style="background-color: #2F5379;">
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header" style="color: whitesmoke; margin-left: 20px;">
+            哈尔滨工业大学判官系统
+        </div>
+    </div>
+</nav>
+
+<div class="container bg">
+    <div class="row d-flex align-items-center justify-content-center" style="min-height: 90vh;">
+
+        <div class="col d-none d-sm-block">
+            <img src="./image/6113080E975FD80D9BB813531775C709.jpg" alt="退学通知书.jpg" class="img-fluid" id="img"
+                 style="height: 200px">
+        </div>
+
+        <div class="col">
+
+            <div class="row">
+                <div class="col"><input type="text" id="username" placeholder="用户名" style="margin: 5px;" autofocus>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col"><input type="password" id="password" placeholder="密码" style="margin: 5px;"></div>
+            </div>
+
+            <div class="row">
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="btn btn-primary" style="margin-top: 10px;" id="submit">登陆</button>
+                </div>
+                <div class="col form-check d-flex align-items-center justify-content-center">
+                    <input class="form-check-input" type="checkbox" id="is-remember">
+                    <label class="form-check-label" for="is-remember" style="color: #2F5379">
+                        记住我
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col"><span id="warning"
+                                       style="color: red; font-size: smaller; background-color: rgba(255, 255, 255, 0.7);"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+# depslib dependency file v1.0
+1669025163 source:d:\codeblocks\minesweeperrelease\gui.cpp
+	"gui.h"
+	"load.h"
+	"calc.h"
+	<ege/sys_edit.h>
+
+1669022352 d:\codeblocks\minesweeperrelease\gui.h
+	"load.h"
+	"calc.h"
+
+1669022124 d:\codeblocks\minesweeperrelease\load.h
+	<graphics.h>
+	<windows.h>
+	<stdio.h>
+	<string.h>
+	"calc.h"
+
+1669025163 d:\codeblocks\minesweeperrelease\calc.h
+	<string.h>
+	<stdlib.h>
+	<time.h>
+	<algorithm>
+
+1669022025 source:d:\codeblocks\minesweeperrelease\main.cpp
+	"gui.h"
+	"calc.h"
+
+1669024529 source:d:\codeblocks\minesweeperrelease\load.cpp
+	"load.h"
+
+1669025518 source:d:\codeblocks\minesweeperrelease\calc.cpp
+	"calc.h"
+
+1670053977 source:d:\file\c语言大作业\code(codeblocks 20.03)\main.cpp
+	"gui.h"
+	"calc.h"
+
+1669199592 d:\file\c语言大作业\code(codeblocks 20.03)\gui.h
+	"load.h"
+	"calc.h"
+
+1669299158 d:\file\c语言大作业\code(codeblocks 20.03)\load.h
+	<graphics.h>
+	<windows.h>
+	<stdio.h>
+	<string.h>
+	"calc.h"
+
+1669343402 d:\file\c语言大作业\code(codeblocks 20.03)\calc.h
+	<string.h>
+	<stdlib.h>
+	<time.h>
+	<algorithm>
+	<graphics.h>
+
+1669300305 source:d:\file\c语言大作业\code(codeblocks 20.03)\calc.cpp
+	"calc.h"
+
+1602319436 d:\file\c语言大作业\code(codeblocks 20.03)\ege20.08\include\graphics.h
+	"ege.h"
+
+1598881520 d:\file\c语言大作业\code(codeblocks 20.03)\ege20.08\include\ege.h
+	"windows.h"
+
+1669344315 source:d:\file\c语言大作业\code(codeblocks 20.03)\gui.cpp
+	"gui.h"
+	"load.h"
+	"calc.h"
+	<ege/sys_edit.h>
+
+1598881520 d:\file\c语言大作业\code(codeblocks 20.03)\ege20.08\include\ege\sys_edit.h
+	"egecontrolbase.h"
+
+1598881520 d:\file\c语言大作业\code(codeblocks 20.03)\ege20.08\include\ege\egecontrolbase.h
+
+1670054216 source:d:\file\c语言大作业\code(codeblocks 20.03)\load.cpp
+	"load.h"
+
+1669299166 source:e:\新建文件夹\c语言大作业\code(codeblocks 20.03)\calc.cpp
+	"calc.h"
+
+1669253810 e:\新建文件夹\c语言大作业\code(codeblocks 20.03)\calc.h
+	<string.h>
+	<stdlib.h>
+	<time.h>
+	<algorithm>
+	<graphics.h>
+
+1602319436 e:\新建文件夹\c语言大作业\code(codeblocks 20.03)\ege20.08\include\graphics.h
+	"ege.h"
+
+1598881520 e:\新建文件夹\c语言大作业\code(codeblocks 20.03)\ege20.08\include\ege.h
+	"windows.h"
+
+1669299158 source:e:\新建文件夹\c语言大作业\code(codeblocks 20.03)\gui.cpp
+	"gui.h"
+	"load.h"
+	"calc.h"
+	<ege/sys_edit.h>
+
+1669199592 e:\新建文件夹\c语言大作业\code(codeblocks 20.03)\gui.h
+	"load.h"
+	"calc.h"
+
+1669299158 e:\新建文件夹\c语言大作业\code(codeblocks 20.03)\load.h
+	<graphics.h>
+	<windows.h>
+	<stdio.h>
+	<string.h>
+	"calc.h"
+
+1598881520 e:\新建文件夹\c语言大作业\code(codeblocks 20.03)\ege20.08\include\ege\sys_edit.h
+	"egecontrolbase.h"
+
+1598881520 e:\新建文件夹\c语言大作业\code(codeblocks 20.03)\ege20.08\include\ege\egecontrolbase.h
+
+1669299158 source:e:\新建文件夹\c语言大作业\code(codeblocks 20.03)\load.cpp
+	"load.h"
+
+1669299158 source:e:\新建文件夹\c语言大作业\code(codeblocks 20.03)\main.cpp
+	"gui.h"
+	"calc.h"
+
+1669300305 source:d:\file\c语言大作业\2022113573\2022113573_code(codeblocks 20.03)\calc.cpp
+	"calc.h"
+
+1670385502 d:\file\c语言大作业\2022113573\2022113573_code(codeblocks 20.03)\calc.h
+	<string.h>
+	<stdlib.h>
+	<time.h>
+	<algorithm>
+	<graphics.h>
+
+1602319436 d:\file\c语言大作业\2022113573\2022113573_code(codeblocks 20.03)\ege20.08\include\graphics.h
+	"ege.h"
+
+1598881520 d:\file\c语言大作业\2022113573\2022113573_code(codeblocks 20.03)\ege20.08\include\ege.h
+	"windows.h"
+
+1670390477 source:d:\file\c语言大作业\2022113573\2022113573_code(codeblocks 20.03)\gui.cpp
+	"gui.h"
+	"load.h"
+	"calc.h"
+	<ege/sys_edit.h>
+
+1669199592 d:\file\c语言大作业\2022113573\2022113573_code(codeblocks 20.03)\gui.h
+	"load.h"
+	"calc.h"
+
+1669299158 d:\file\c语言大作业\2022113573\2022113573_code(codeblocks 20.03)\load.h
+	<graphics.h>
+	<windows.h>
+	<stdio.h>
+	<string.h>
+	"calc.h"
+
+1598881520 d:\file\c语言大作业\2022113573\2022113573_code(codeblocks 20.03)\ege20.08\include\ege\sys_edit.h
+	"egecontrolbase.h"
+
+1598881520 d:\file\c语言大作业\2022113573\2022113573_code(codeblocks 20.03)\ege20.08\include\ege\egecontrolbase.h
+
+1670054216 source:d:\file\c语言大作业\2022113573\2022113573_code(codeblocks 20.03)\load.cpp
+	"load.h"
+
+1670383604 source:d:\file\c语言大作业\2022113573\2022113573_code(codeblocks 20.03)\main.cpp
+	"gui.h"
+	"calc.h"
+

@@ -1,0 +1,73 @@
+# depslib dependency file v1.0
+1689060539 source:d:\codeblocks\summer_hanoi.cpp\main.cpp
+	<iostream>
+	"hanoi.h"
+
+1689060611 d:\codeblocks\summer_hanoi.cpp\hanoi.h
+	<bits/stdc++.h>
+
+1689060433 source:d:\codeblocks\summer_hanoi.cpp\stack.cpp
+	"hanoi.h"
+
+1689210627 source:d:\codeblocks\summer_hanoi\stack.cpp
+	"hanoi.h"
+
+1689211507 d:\codeblocks\summer_hanoi\hanoi.h
+	<bits/stdc++.h>
+	<conio.h>
+	<windows.h>
+	"cmd_console_tools.h"
+
+1689154205 d:\codeblocks\summer_hanoi\cmd_console_tools.h
+
+1689154318 source:d:\codeblocks\summer_hanoi\cmd_console_tools.cpp
+	<iostream>
+	<iomanip>
+	<tchar.h>
+	<string.h>
+	<Windows.h>
+	"cmd_console_tools.h"
+
+1689211486 source:d:\codeblocks\summer_hanoi\main.cpp
+	"hanoi.h"
+
+1689160654 source:d:\codeblocks\summer_hanoi\menu.cpp
+	"hanoi.h"
+
+1689211446 source:d:\codeblocks\summer_hanoi\hanoi.cpp
+	"hanoi.h"
+
+1689160654 source:d:\codeblocks\summer_hanoi\manual.cpp
+	"hanoi.h"
+
+1689154318 source:d:\file\大一夏\c++大作业\summer_hanoi\cmd_console_tools.cpp
+	<iostream>
+	<iomanip>
+	<tchar.h>
+	<string.h>
+	<Windows.h>
+	"cmd_console_tools.h"
+
+1689154205 d:\file\大一夏\c++大作业\summer_hanoi\cmd_console_tools.h
+
+1689211486 source:d:\file\大一夏\c++大作业\summer_hanoi\main.cpp
+	"hanoi.h"
+
+1689211507 d:\file\大一夏\c++大作业\summer_hanoi\hanoi.h
+	<bits/stdc++.h>
+	<conio.h>
+	<windows.h>
+	"cmd_console_tools.h"
+
+1689305481 source:d:\file\大一夏\c++大作业\summer_hanoi\manual.cpp
+	"hanoi.h"
+
+1689160654 source:d:\file\大一夏\c++大作业\summer_hanoi\menu.cpp
+	"hanoi.h"
+
+1689210627 source:d:\file\大一夏\c++大作业\summer_hanoi\stack.cpp
+	"hanoi.h"
+
+1689304801 source:d:\file\大一夏\c++大作业\summer_hanoi\hanoi.cpp
+	"hanoi.h"
+
