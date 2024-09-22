@@ -1,0 +1,1 @@
+g++ -o test.exe ./main.cpp ./src/header/AdjacencyListGraph.cpp ./src/header/AdjacencyMatrixGraph.cpp ./src/header/Convertion.cpp ./src/all_shortest_to.cpp ./src/dijkstra.cpp ./src/floyd.cpp ./src/shortest_pair.cpp ./src/warshall.cpp

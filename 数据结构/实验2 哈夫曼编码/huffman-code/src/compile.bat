@@ -1,0 +1,1 @@
+g++ main.cpp ./header/HuffmanTree.cpp ./header/HuffmanEncoder.cpp ./header/HuffmanDecoder.cpp ./header/BitManipulator.cpp ./header/HuffmanCodec.cpp -o test.exe

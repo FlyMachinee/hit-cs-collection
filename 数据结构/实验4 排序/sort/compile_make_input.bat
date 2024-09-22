@@ -1,0 +1,1 @@
+g++ make_input.cpp -o make_input -O2

@@ -1,0 +1,125 @@
+1、账号
+用户名：stu学号，例如stu2021140001
+初始密码：123456
+★stu001~stu020共20个账号，用于没有账号、忘记密码的同学临时使用，目录中的内容可能会被别人误删除！！！。
+
+2、远程登陆
+ 【校园网环境下登陆，校外无法使用。】
+2.1 主机地址
+   DELL服务器：X86-64处理器
+   地址ddns.hitsplab.xyz
+   ★端口号是22201，不是默认的22！  
+   
+2.2 远程登陆
+（1）连接方式1——ssh命令：
+  ssh -p 22201 <用户名>@ddns.hitsplab.xyz
+可用win10自带命令ssh，例如:
+   windows键->cmd->
+   ssh -p 22201 stu2021140001@ddns.hitsplab.xyz
+（2）连接方式2——window远程桌面
+  ★DELL服务器的端口号33897
+（3）MobaXterm
+  新建session，选择SSH
+  输入地址：ddns.hitsplab.xyz
+  用户名：stu2021140001
+  端口：22201
+  教程：https://blog.csdn.net/qq_37665301/article/details/116031615
+
+3、推荐登陆方式
+   MobaXterm          ★★★★★
+   XShell+ XFTP       ★★★★★
+   windows远程桌面    ★★★★☆
+   putty              ★★★☆☆
+   windows命令行...   ★★☆☆☆ 
+   
+4、从主机下载/上传文件的方法
+   4.1 MobaXterm
+   登陆后，左侧可视化目录结构支持拖拉操作
+   
+   4.2 XShell
+   用XShell登陆主机，XShell有工具栏按钮，直接启动XFTP，在windows窗口界面下实现上传、下载。
+   
+   4.3 rz、sz指令
+   用ssh指令、XShell等登陆主机后，在远程主机上用rz bye、sz <文件路径> 实现上传/下载
+      
+   4.4 scp指令(本地使用)
+   下载：
+   scp -P 22201 用户名@ddns.hitsplab.xyz:/文件全名   d:/本地目录名
+   上传：
+   scp -P 22201 d:/本地文件名 用户名@ddns.hitsplab1.xyz:/文件目录
+
+   4.5 windows命令行下，使用SFTP  
+	（1）SFTP登陆远程主机
+		sftp [user@]host[:dir[/]]
+		示例：
+		sftp 127.0.0.1
+		sftp admin@127.0.0.1
+		sftp admin@127.0.0.1:aa/
+
+	（2）退出SFTP
+		quit
+		exit
+		bye
+
+	（3）显示远程主机指定目录下的文件（文件夹）
+		ls [path]
+		示例：
+		ls			// 显示当前目录下的文件（文件夹）
+		ls /user	// 显示user目录下的文件（文件夹）
+
+	（4）进入远程主机指定目录
+		cd [path]
+		示例：
+		cd 			// 进入当前目录（无意义）
+		cd /user	// 进入user目录
+
+	（5）查看远程远程当前目录：pwd
+
+	（6）远程主机上的目录操作
+		①创建目录
+		mkdir [path]
+		示例：
+		mkdir user1
+
+		②删除目录
+		rmdir [path]
+		示例：
+		rmdir user1 
+
+	（7）上传文件到远程主机
+		put local [remote]
+		mput local [remote]
+
+		示例：
+		put E:\111.txt		// 不指定远程目录直接上传到远程根目录
+		put E:\111.txt /user	// 上传到远程指定目录
+
+	（8）下载文件
+		# 下载到本地
+		get remote [local]
+		mget remote [local]
+		示例：
+		get /user/111.txt   // 不指定本地目录直接下载到本地当前目录
+		get /user/111.txt E:\aaa  // 下载到本地指定目录
+
+	（9）删除远程主机上的文件
+		rm [remote]
+		示例：
+		rm /user/111.txt
+	（10）重命名文件夹、文件
+		rename old new
+		示例：
+		rename /user /user1
+	（11）进入本地指定目录
+		lcd path
+		示例：
+		lcd d:\user
+	（12）显示本地指定目录下的文件（文件夹）
+		lls [ls-options [path]]
+		示例：
+		lls				// 显示本地当前目录下的文件（文件夹）
+		lls d:\user		// 显示本地d:\user目录下的文件（文件夹）
+	（13）查看本地当前目录
+		lpwd
+   
+

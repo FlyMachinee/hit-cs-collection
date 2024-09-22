@@ -1,0 +1,61 @@
+set_property  -dict {PACKAGE_PIN P17 IOSTANDARD LVCMOS33} [get_ports clk]
+
+set_property  -dict {PACKAGE_PIN V1 IOSTANDARD LVCMOS33} [get_ports btn_A]
+set_property  -dict {PACKAGE_PIN R11 IOSTANDARD LVCMOS33} [get_ports btn_B]
+set_property  -dict {PACKAGE_PIN R15 IOSTANDARD LVCMOS33} [get_ports btn_start_and_pause]
+
+set_property  -dict {PACKAGE_PIN U4 IOSTANDARD LVCMOS33} [get_ports set_zero_A]
+set_property  -dict {PACKAGE_PIN R17 IOSTANDARD LVCMOS33} [get_ports set_zero_B]
+
+set_property  -dict {PACKAGE_PIN R1 IOSTANDARD LVCMOS33} [get_ports {initial_minutes[0]}]
+set_property  -dict {PACKAGE_PIN N4 IOSTANDARD LVCMOS33} [get_ports {initial_minutes[1]}]
+set_property  -dict {PACKAGE_PIN M4 IOSTANDARD LVCMOS33} [get_ports {initial_minutes[2]}]
+set_property  -dict {PACKAGE_PIN R2 IOSTANDARD LVCMOS33} [get_ports {initial_minutes[3]}]
+set_property  -dict {PACKAGE_PIN P2 IOSTANDARD LVCMOS33} [get_ports {initial_minutes[4]}]
+set_property  -dict {PACKAGE_PIN P3 IOSTANDARD LVCMOS33} [get_ports {initial_minutes[5]}]
+
+set_property  -dict {PACKAGE_PIN D4 IOSTANDARD LVCMOS33} [get_ports {nixie_seg0[0]}]
+set_property  -dict {PACKAGE_PIN E3 IOSTANDARD LVCMOS33} [get_ports {nixie_seg0[1]}]
+set_property  -dict {PACKAGE_PIN D3 IOSTANDARD LVCMOS33} [get_ports {nixie_seg0[2]}]
+set_property  -dict {PACKAGE_PIN F4 IOSTANDARD LVCMOS33} [get_ports {nixie_seg0[3]}]
+set_property  -dict {PACKAGE_PIN F3 IOSTANDARD LVCMOS33} [get_ports {nixie_seg0[4]}]
+set_property  -dict {PACKAGE_PIN E2 IOSTANDARD LVCMOS33} [get_ports {nixie_seg0[5]}]
+set_property  -dict {PACKAGE_PIN D2 IOSTANDARD LVCMOS33} [get_ports {nixie_seg0[6]}]
+set_property  -dict {PACKAGE_PIN H2 IOSTANDARD LVCMOS33} [get_ports {nixie_seg0[7]}]
+
+set_property  -dict {PACKAGE_PIN G2 IOSTANDARD LVCMOS33} [get_ports {nixie_addr0[0]}]
+set_property  -dict {PACKAGE_PIN C2 IOSTANDARD LVCMOS33} [get_ports {nixie_addr0[1]}]
+set_property  -dict {PACKAGE_PIN C1 IOSTANDARD LVCMOS33} [get_ports {nixie_addr0[2]}]
+set_property  -dict {PACKAGE_PIN H1 IOSTANDARD LVCMOS33} [get_ports {nixie_addr0[3]}]
+
+set_property  -dict {PACKAGE_PIN B4 IOSTANDARD LVCMOS33} [get_ports {nixie_seg1[0]}]
+set_property  -dict {PACKAGE_PIN A4 IOSTANDARD LVCMOS33} [get_ports {nixie_seg1[1]}]
+set_property  -dict {PACKAGE_PIN A3 IOSTANDARD LVCMOS33} [get_ports {nixie_seg1[2]}]
+set_property  -dict {PACKAGE_PIN B1 IOSTANDARD LVCMOS33} [get_ports {nixie_seg1[3]}]
+set_property  -dict {PACKAGE_PIN A1 IOSTANDARD LVCMOS33} [get_ports {nixie_seg1[4]}]
+set_property  -dict {PACKAGE_PIN B3 IOSTANDARD LVCMOS33} [get_ports {nixie_seg1[5]}]
+set_property  -dict {PACKAGE_PIN B2 IOSTANDARD LVCMOS33} [get_ports {nixie_seg1[6]}]
+set_property  -dict {PACKAGE_PIN D5 IOSTANDARD LVCMOS33} [get_ports {nixie_seg1[7]}]
+
+set_property  -dict {PACKAGE_PIN G1 IOSTANDARD LVCMOS33} [get_ports {nixie_addr1[0]}]
+set_property  -dict {PACKAGE_PIN F1 IOSTANDARD LVCMOS33} [get_ports {nixie_addr1[1]}]
+set_property  -dict {PACKAGE_PIN E1 IOSTANDARD LVCMOS33} [get_ports {nixie_addr1[2]}]
+set_property  -dict {PACKAGE_PIN G6 IOSTANDARD LVCMOS33} [get_ports {nixie_addr1[3]}]
+
+set_property  -dict {PACKAGE_PIN H4 IOSTANDARD LVCMOS33} [get_ports {state_led_B[0]}]
+set_property  -dict {PACKAGE_PIN J3 IOSTANDARD LVCMOS33} [get_ports {state_led_B[1]}]
+set_property  -dict {PACKAGE_PIN J2 IOSTANDARD LVCMOS33} [get_ports {state_led_B[2]}]
+set_property  -dict {PACKAGE_PIN K2 IOSTANDARD LVCMOS33} [get_ports {state_led_B[3]}]
+
+set_property  -dict {PACKAGE_PIN F6 IOSTANDARD LVCMOS33} [get_ports {state_led_A[3]}]
+set_property  -dict {PACKAGE_PIN G4 IOSTANDARD LVCMOS33} [get_ports {state_led_A[2]}]
+set_property  -dict {PACKAGE_PIN G3 IOSTANDARD LVCMOS33} [get_ports {state_led_A[1]}]
+set_property  -dict {PACKAGE_PIN J4 IOSTANDARD LVCMOS33} [get_ports {state_led_A[0]}]
+
+set_property  -dict {PACKAGE_PIN K3 IOSTANDARD LVCMOS33} [get_ports {score_led_B[0]}]
+set_property  -dict {PACKAGE_PIN M1 IOSTANDARD LVCMOS33} [get_ports {score_led_B[1]}]
+set_property  -dict {PACKAGE_PIN L1 IOSTANDARD LVCMOS33} [get_ports {score_led_B[2]}]
+
+set_property  -dict {PACKAGE_PIN K1 IOSTANDARD LVCMOS33} [get_ports {score_led_A[0]}]
+set_property  -dict {PACKAGE_PIN H6 IOSTANDARD LVCMOS33} [get_ports {score_led_A[1]}]
+set_property  -dict {PACKAGE_PIN H5 IOSTANDARD LVCMOS33} [get_ports {score_led_A[2]}]
